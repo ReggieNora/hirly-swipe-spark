@@ -1,8 +1,8 @@
 
 import { useState, useRef } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import JobCard from './JobCard';
-import TestimonialCard from './TestimonialCard';
+import StoryCard from './StoryCard';
+import InstantConnectionsCard from './InstantConnectionsCard';
 import SignUpCard from './SignUpCard';
 
 const SwipeableCards = () => {
@@ -12,12 +12,54 @@ const SwipeableCards = () => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   const cards = [
-    { type: 'job', data: { title: 'Senior Frontend Developer', company: 'TechCorp', salary: '$120k - $150k', location: 'Remote' } },
-    { type: 'job', data: { title: 'UX Designer', company: 'DesignStudio', salary: '$90k - $110k', location: 'San Francisco' } },
-    { type: 'testimonial', data: { quote: 'Hirly helped me find my dream job in just 2 weeks!', name: 'Sarah Chen', title: 'Software Engineer' } },
-    { type: 'job', data: { title: 'Product Manager', company: 'StartupXYZ', salary: '$130k - $160k', location: 'New York' } },
-    { type: 'testimonial', data: { quote: 'The swipe interface makes job hunting actually fun.', name: 'Michael Rodriguez', title: 'Data Scientist' } },
-    { type: 'signup', data: {} }
+    { 
+      type: 'story', 
+      data: { 
+        title: 'Welcome to Hirly', 
+        subtitle: 'The future of job hunting',
+        description: 'Discover opportunities like never before with our revolutionary swipe-to-match platform.'
+      } 
+    },
+    { 
+      type: 'story', 
+      data: { 
+        title: 'Swipe to find', 
+        subtitle: 'New opportunities',
+        description: 'Browse through curated job matches tailored to your skills and preferences.'
+      } 
+    },
+    { 
+      type: 'story', 
+      data: { 
+        title: 'Or, swipe to find', 
+        subtitle: 'Your next candidate',
+        description: 'Employers can discover top talent with the same intuitive swipe interface.'
+      } 
+    },
+    { 
+      type: 'connections', 
+      data: {} 
+    },
+    { 
+      type: 'story', 
+      data: { 
+        title: 'Post your resume', 
+        subtitle: 'Stand out from the crowd',
+        description: 'Create a compelling profile that showcases your unique skills and experience.'
+      } 
+    },
+    { 
+      type: 'story', 
+      data: { 
+        title: 'Or your current', 
+        subtitle: 'Job openings',
+        description: 'List your positions and connect with qualified candidates instantly.'
+      } 
+    },
+    { 
+      type: 'signup', 
+      data: {} 
+    }
   ];
 
   const nextCard = () => {
@@ -62,10 +104,10 @@ const SwipeableCards = () => {
 
   const renderCard = (card: any) => {
     switch (card.type) {
-      case 'job':
-        return <JobCard {...card.data} />;
-      case 'testimonial':
-        return <TestimonialCard {...card.data} />;
+      case 'story':
+        return <StoryCard {...card.data} />;
+      case 'connections':
+        return <InstantConnectionsCard />;
       case 'signup':
         return <SignUpCard />;
       default:
