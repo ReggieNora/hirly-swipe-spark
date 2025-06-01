@@ -3,7 +3,7 @@ import { Zap } from 'lucide-react';
 
 const InstantConnectionsCard = () => {
   return (
-    <div className="w-full h-full bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-md rounded-3xl border border-white/30 p-8 flex flex-col justify-center shadow-2xl hover:shadow-purple-500/30 transition-all duration-300 hover:scale-105 relative overflow-hidden">
+    <div className="w-full h-full bg-gradient-to-br from-purple-500/10 to-pink-500/10 backdrop-blur-xl rounded-3xl border border-white/15 p-8 flex flex-col justify-center shadow-2xl hover:shadow-purple-500/20 transition-all duration-300 hover:scale-105 relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute top-4 right-4 text-yellow-400 animate-pulse">
         <Zap size={24} />
@@ -18,7 +18,7 @@ const InstantConnectionsCard = () => {
         </h3>
         
         {/* High-five image placeholder - using a visual representation */}
-        <div className="mx-auto w-32 h-32 bg-gradient-to-br from-purple-400/30 to-pink-400/30 rounded-full flex items-center justify-center border border-white/20 mb-6">
+        <div className="mx-auto w-32 h-32 bg-gradient-to-br from-purple-400/20 to-pink-400/20 rounded-full flex items-center justify-center border border-white/10 mb-6">
           <img 
             src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=300&h=300&fit=crop&crop=faces"
             alt="People connecting and celebrating"

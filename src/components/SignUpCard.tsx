@@ -8,7 +8,7 @@ const SignUpCard = () => {
   };
 
   return (
-    <div className="w-full h-full bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-md rounded-3xl border border-white/30 p-8 flex flex-col justify-center shadow-2xl hover:shadow-purple-500/30 transition-all duration-300 hover:scale-105 relative overflow-hidden">
+    <div className="w-full h-full bg-gradient-to-br from-purple-500/10 to-pink-500/10 backdrop-blur-xl rounded-3xl border border-white/15 p-8 flex flex-col justify-center shadow-2xl hover:shadow-purple-500/20 transition-all duration-300 hover:scale-105 relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute top-4 right-4 text-purple-300 animate-pulse">
         <Sparkles size={24} />
@@ -23,7 +23,7 @@ const SignUpCard = () => {
         </h3>
         
         <p className="text-purple-200 text-lg font-light leading-relaxed">
-          Join thousands of professionals who found their perfect match with Hirly
+          Join thousands of professionals who found their perfect match
         </p>
         
         <div className="space-y-4 mt-8">

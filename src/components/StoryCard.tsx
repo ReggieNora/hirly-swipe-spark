@@ -7,7 +7,7 @@ interface StoryCardProps {
 
 const StoryCard = ({ title, subtitle, description }: StoryCardProps) => {
   return (
-    <div className="w-full h-full bg-white/10 backdrop-blur-md rounded-3xl border border-white/20 p-8 flex flex-col justify-center shadow-2xl hover:shadow-purple-500/20 transition-all duration-300 hover:scale-105 relative overflow-hidden">
+    <div className="w-full h-full bg-white/5 backdrop-blur-xl rounded-3xl border border-white/10 p-8 flex flex-col justify-center shadow-2xl hover:shadow-purple-500/10 transition-all duration-300 hover:scale-105 relative overflow-hidden">
       {/* Subtle gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-transparent rounded-3xl"></div>
       

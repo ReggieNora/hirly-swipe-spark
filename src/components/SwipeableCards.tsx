@@ -15,7 +15,7 @@ const SwipeableCards = () => {
     { 
       type: 'story', 
       data: { 
-        title: 'Welcome to Hirly', 
+        title: 'Welcome to', 
         subtitle: 'The future of job hunting',
         description: 'Discover opportunities like never before with our revolutionary swipe-to-match platform.'
       } 
@@ -156,14 +156,14 @@ const SwipeableCards = () => {
         <button
           onClick={prevCard}
           disabled={currentIndex === 0}
-          className="p-3 bg-white/10 backdrop-blur-md rounded-full border border-white/20 text-white hover:bg-white/20 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed hover:scale-110"
+          className="p-3 bg-white/5 backdrop-blur-md rounded-full border border-white/10 text-white hover:bg-white/10 transition-all duration-300 disabled:opacity-30 disabled:cursor-not-allowed hover:scale-110"
         >
           <ChevronLeft size={24} />
         </button>
         <button
           onClick={nextCard}
           disabled={currentIndex === cards.length - 1}
-          className="p-3 bg-white/10 backdrop-blur-md rounded-full border border-white/20 text-white hover:bg-white/20 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed hover:scale-110"
+          className="p-3 bg-white/5 backdrop-blur-md rounded-full border border-white/10 text-white hover:bg-white/10 transition-all duration-300 disabled:opacity-30 disabled:cursor-not-allowed hover:scale-110"
         >
           <ChevronRight size={24} />
         </button>
@@ -175,7 +175,7 @@ const SwipeableCards = () => {
           <div
             key={index}
             className={`w-2 h-2 rounded-full transition-all duration-300 ${
-              index === currentIndex ? 'bg-purple-400 w-8' : 'bg-white/30'
+              index === currentIndex ? 'bg-purple-400 w-8' : 'bg-white/20'
             }`}
           />
         ))}

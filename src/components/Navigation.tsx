@@ -15,14 +15,13 @@ const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 p-6">
       <div className="max-w-7xl mx-auto">
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center justify-between">
-          <div className="text-2xl font-bold text-white">Hirly</div>
+        <div className="hidden md:flex items-center justify-center">
           <div className="flex space-x-8">
             {navItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="text-purple-200 hover:text-white transition-all duration-300 hover:scale-105 relative group"
+                className="text-purple-200 hover:text-white transition-all duration-300 hover:scale-105 relative group font-light text-lg"
               >
                 {item.name}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-400 to-pink-400 transition-all duration-300 group-hover:w-full"></span>
@@ -32,8 +31,7 @@ const Navigation = () => {
         </div>
 
         {/* Mobile Navigation */}
-        <div className="md:hidden flex items-center justify-between">
-          <div className="text-2xl font-bold text-white">Hirly</div>
+        <div className="md:hidden flex items-center justify-end">
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="text-white p-2 hover:bg-white/10 rounded-lg transition-colors"
@@ -49,7 +47,7 @@ const Navigation = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="block py-3 text-purple-200 hover:text-white transition-colors"
+                className="block py-3 text-purple-200 hover:text-white transition-colors font-light"
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}
