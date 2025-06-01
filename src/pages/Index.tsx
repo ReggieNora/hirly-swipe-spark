@@ -12,9 +12,12 @@ const Index = () => {
       <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-purple-600/5 rounded-full blur-3xl"></div>
       
-      {/* Large background HIRLY branding */}
+      {/* Large background HIRLY branding - horizontal and centered */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
-        <h1 className="text-[20rem] md:text-[25rem] lg:text-[30rem] font-black text-white/[0.03] tracking-tighter leading-none transform -rotate-6">
+        <h1 className="text-[20rem] md:text-[25rem] lg:text-[30rem] font-black text-white/[0.06] tracking-tighter leading-none" 
+            style={{ 
+              textShadow: '0 0 40px rgba(168, 85, 247, 0.15), 0 0 80px rgba(168, 85, 247, 0.1)' 
+            }}>
           HIRLY
         </h1>
       </div>
