@@ -1,4 +1,3 @@
-
 import { useState, useRef } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import StoryCard from './StoryCard';
@@ -15,9 +14,9 @@ const SwipeableCards = () => {
     { 
       type: 'story', 
       data: { 
-        title: 'Welcome to', 
-        subtitle: 'The future of job hunting',
-        description: 'Discover opportunities like never before with our revolutionary swipe-to-match platform.'
+        title: 'Hirly', 
+        subtitle: '',
+        description: ''
       } 
     },
     { 

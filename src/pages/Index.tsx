@@ -2,7 +2,6 @@
 import { useState } from 'react';
 import Navigation from '@/components/Navigation';
 import SwipeableCards from '@/components/SwipeableCards';
-import InstructionText from '@/components/InstructionText';
 
 const Index = () => {
   return (
@@ -25,7 +24,6 @@ const Index = () => {
       <Navigation />
       
       <main className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 pt-20">
-        <InstructionText />
         <SwipeableCards />
       </main>
     </div>
