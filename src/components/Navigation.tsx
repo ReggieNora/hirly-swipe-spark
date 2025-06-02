@@ -1,6 +1,7 @@
 
 import { useState } from 'react';
 import { Menu, X, LogIn } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,10 +28,13 @@ const Navigation = () => {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-400 to-pink-400 transition-all duration-300 group-hover:w-full"></span>
               </a>
             ))}
-            <button className="flex items-center space-x-2 text-purple-200 hover:text-white transition-all duration-300 hover:scale-105 relative group font-light text-lg bg-white/10 hover:bg-white/20 px-4 py-2 rounded-lg backdrop-blur-sm border border-white/10">
+            <Link 
+              to="/login"
+              className="flex items-center space-x-2 text-purple-200 hover:text-white transition-all duration-300 hover:scale-105 relative group font-light text-lg bg-white/10 hover:bg-white/20 px-4 py-2 rounded-lg backdrop-blur-sm border border-white/10"
+            >
               <LogIn size={18} />
               <span>Login</span>
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -57,10 +61,14 @@ const Navigation = () => {
                 {item.name}
               </a>
             ))}
-            <button className="flex items-center space-x-2 w-full py-3 text-purple-200 hover:text-white transition-colors font-light">
+            <Link 
+              to="/login"
+              className="flex items-center space-x-2 w-full py-3 text-purple-200 hover:text-white transition-colors font-light"
+              onClick={() => setIsOpen(false)}
+            >
               <LogIn size={18} />
               <span>Login</span>
-            </button>
+            </Link>
           </div>
         )}
       </div>
