@@ -1,10 +1,11 @@
-
 import { ArrowRight, Sparkles } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const SignUpCard = () => {
+  const navigate = useNavigate();
+
   const handleGetStarted = () => {
-    // This would navigate to pricing page
-    console.log('Navigating to pricing page...');
+    navigate('/login?mode=signup');
   };
 
   return (
